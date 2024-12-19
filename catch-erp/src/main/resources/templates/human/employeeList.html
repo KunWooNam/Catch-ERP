@@ -230,7 +230,7 @@
                                         <div class="col-md-4 text-center">
                                         	<div class="row">
                                         		<div class="col-12">
-		                                            <img src="/placeholder.svg?height=100&width=100" onerror="this.onerror=null; this.src='/img/imageNo.jpg'" style="height:100%;width:100%;"alt="Employee Photo" class="employee-photo mb-2" id="employeePhoto">                                        		
+		                                            <img src="/placeholder.svg?height=100&width=100" onerror="this.onerror=null; this.src='/img/imageNo.jpg'" style="height:100%;width:100%;max-height:240px;max-width:240px;"alt="Employee Photo" class="employee-photo mb-2" id="employeePhoto">                                        		
                                         		</div>
                                         		<div class="col-12">
                                         			<div class="input-group input-group-sm mb-3">
@@ -597,7 +597,6 @@
     </div>
 <!-- 수당검색모달끝!! -->
 <link id="contextPathHolder" th:data-contextPath="${@environment.getProperty('server.servlet.context-path')}"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script th:src='@{/js/common/toastsetting.js}'></script>
 
 

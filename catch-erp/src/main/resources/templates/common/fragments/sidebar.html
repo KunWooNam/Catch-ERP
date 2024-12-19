@@ -57,7 +57,7 @@
               <li class="nav-item" >
                 <a  href="/stocks/stockInquery" style="margin-bottom:0">
                   <i class="icon-drawer"></i>
-                  <p>자재 조회/관리</p>
+                  <p>제품 조회/관리</p>
                 </a>
               </li>             
               
@@ -372,31 +372,10 @@
                 <h4 class="text-section">인사파트</h4>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#base">
+                <a th:href="@{/employees/employee}">
                   <i class="icon-people"></i>
                   <p>인사관리</p>
-                  <span class="caret"></span>         
                 </a>
-                <div class="collapse" id="base">
-                  <ul class="nav nav-collapse">
-                    <li>
-                      <a th:href="@{/employees/employee}">
-                        <span class="sub-item">인사카드</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="sub-item">인사발령입력</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span class="sub-item">인사발령현황</span>
-                      </a>
-                    </li>
-                    
-                  </ul>
-                </div>
               </li>
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts">
@@ -420,21 +399,12 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#forms" >
+                <a th:href="@{/employees/payment}">
                   <i class="icon-calendar"></i>
-                  <p>급여</p>
-                  <span class="caret"></span>
+                  <p>급여관리</p>
                 </a>
-                <div class="collapse" id="forms">
-                  <ul class="nav nav-collapse">
-                    <li>
-                      <a th:href="@{/employees/payment}">
-                        <span class="sub-item">급여조회</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
+              </li>              
+              
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#tables">
                   <i class="icon-note"></i>
